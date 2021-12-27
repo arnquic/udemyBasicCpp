@@ -14,6 +14,7 @@ class Character {
    public:
     Character();
     Character(string name);
+    Character(string name, int level, float experience);
     ~Character();
     void setName(string name);
     string getName();

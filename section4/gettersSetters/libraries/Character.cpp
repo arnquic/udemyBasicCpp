@@ -17,6 +17,11 @@ Character::Character(string name) {
     experience = 0.0f;
 }
 
+// Another way of doing contructors
+// Constructor initilization list
+// Better performance than 'this->name = name' or 'name=newName'
+Character::Character(string name, int level, float experience) : name(name), level(level), experience(experience){};
+
 Character::~Character(){};
 
 void Character::setName(string name) {
