@@ -9,7 +9,7 @@ class Person {
    public:
     Person(){};
     Person(string name) : name(name){};
-    ~Person() { cout << "Destructor called." << endl; };
+    ~Person() { cout << "Destructor called on person with name: " << this->name << endl; };
     void setName(char name) { this->name = name; };
     string getName() { return this->name; };
 };
