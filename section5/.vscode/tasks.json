@@ -9,6 +9,7 @@
 				"-fdiagnostics-color=always",
 				"-g",
 				"${file}",
+				"${fileDirname}/libraries/*.cpp",
 				"-o",
 				"${fileDirname}/${fileBasenameNoExtension}"
 			],
